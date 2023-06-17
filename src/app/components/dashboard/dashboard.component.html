@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<mat-card *ngFor="let product of products">
+  <div class="header">
+    <mat-card-title>{{product?.name}}</mat-card-title>
+    <mat-card-subtitle>Category: {{product?.category}}</mat-card-subtitle>
+  </div>
+  <p class="desc">{{product?.desc}}</p>
+  <mat-chip-listbox>
+    <mat-chip *ngFor="let tag of product?.tags">{{tag}}</mat-chip>
+  </mat-chip-listbox>
+  <div class="actions">
+    <button mat-button>OPEN</button>
+  </div>
+</mat-card>
