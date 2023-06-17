@@ -1,0 +1,34 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box {
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 1px black;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.inputs > input {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.inputs > input:focus {
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
